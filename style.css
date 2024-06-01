@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #111;
+}
+
+.container {
+  padding: 4rem 8rem;
+  columns: 3 400px;
+  column-gap: 2rem;
+  
+    .card img {
+      margin: 0 1rem 2rem 0;
+      display: block;
+      background: #333;
+      border-radius: 1rem;
+      border: none;
+      overflow: hidden;
+      min-height: 200px;
+      width: 100%;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      
+         &:hover {
+          filter: invert(1);
+      }
+    }
+     
+  @media only screen and (max-width: 1000px) {
+    padding: 2rem;
+  }
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.accordion:after {
+  content: '\002B';
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  font-family: 'Muli', sans-serif;
+  padding: 0 18px;
+  background-color: #111;
+  color: white;
+  text-align: justify;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+h1 {
+  font-family: 'Monoton', sans-serif;
+  font-size: 70px;
+  color: red;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Bangers', sans-serif;
+  color: orange;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Bangers', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.image {
+  cursor: pointer;
+}
